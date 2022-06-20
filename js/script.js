@@ -160,7 +160,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Используем классы для карточек
 
     class MenuCard {
-        constructor(src, alt, title, descr, price, parentSelector, classes) {
+        constructor(src, alt, title, descr, price, parentSelector, ...classes) {
             this.src = src;
             this.alt = alt;
             this.title = title;
@@ -202,7 +202,8 @@ window.addEventListener('DOMContentLoaded', () => {
         'Меню "Фитнес"',
         'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
         9,
-        '.menu .container'
+        '.menu .container',
+        'menu__item',
     ).render();
 
     new MenuCard(
@@ -211,7 +212,8 @@ window.addEventListener('DOMContentLoaded', () => {
         'Меню “Премиум”',
         'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
         15,
-        '.menu .container'
+        '.menu .container',
+        'menu__item',
     ).render();
 
     new MenuCard(
@@ -220,7 +222,8 @@ window.addEventListener('DOMContentLoaded', () => {
         'Меню "Постное"',
         'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
         7,
-        '.menu .container'
+        '.menu .container',
+        'menu__item',
     ).render();
 
     new MenuCard(
@@ -229,7 +232,9 @@ window.addEventListener('DOMContentLoaded', () => {
         'Меню "Сбалансированное"',
         'Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.',
         8,
-        '.menu .container'
+        '.menu .container',
+        'menu__item',
+        'big',
     ).render();
 
 });
