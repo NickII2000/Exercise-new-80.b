@@ -178,10 +178,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
         render() {
             const element = document.createElement('div');
-            if ()
-                this.classes.forEach(className => {
-                    element.classList.add(className);
-                });
+
+            this.classes.forEach(className => element.classList.add(className));
             element.innerHTML = `
                 <img src=${this.src} alt=${this.alt}>
                 <h3 class="menu__item-subtitle">${this.title}</h3>
