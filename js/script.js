@@ -196,7 +196,6 @@ window.addEventListener('DOMContentLoaded', () => {
             `;
             this.parent.append(element);
         }
-
     }
 
     new MenuCard(
