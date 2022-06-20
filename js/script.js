@@ -166,7 +166,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.title = title;
             this.descr = descr;
             this.price = price;
-            this.classes = classes; // || ['menu__item'];
+            this.classes = classes;
             this.parent = document.querySelector(parentSelector);
             this.transfer = 60;
             this.changeToRUB();
@@ -178,9 +178,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         render() {
             const element = document.createElement('div');
-            this.classes.forEach(className => {
-                element.classList.add(className);
-            });
+            if ()
+                this.classes.forEach(className => {
+                    element.classList.add(className);
+                });
             element.innerHTML = `
                 <img src=${this.src} alt=${this.alt}>
                 <h3 class="menu__item-subtitle">${this.title}</h3>
