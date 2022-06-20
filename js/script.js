@@ -125,9 +125,9 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', showModalByScroll);
 
     function openModal() {
-        // modal.classList.add('show');
-        // modal.classList.remove('hide');
-        modal.classList.toggle('show');
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        // modal.classList.toggle('show');
         document.body.style.overflow = 'hidden';
         clearInterval(modalTimerId);
         window.removeEventListener('scroll', showModalByScroll);
@@ -136,9 +136,9 @@ window.addEventListener('DOMContentLoaded', () => {
     modalTrigger.forEach(btn => btn.addEventListener('click', openModal));
 
     function closeModal() {
-        // modal.classList.add('hide');
-        // modal.classList.remove('show');
-        modal.classList.toggle('show');
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+        // modal.classList.toggle('show');
         document.body.style.overflow = '';
     }
     modalCloseBtn.addEventListener('click', closeModal);
